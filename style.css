@@ -1,0 +1,192 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    width: 100px;
+    height: fit-content;
+    margin-right: 1rem;
+}
+
+header nav ul, footer nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 30px;
+}
+
+header nav ul li a, footer nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+a:hover {
+    color:bisque;
+   
+}
+
+section {
+    padding: 2rem 4rem;
+}
+
+#about h2, h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* .card-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+} */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Dynamische Spalten */
+    gap: 1rem; /* Abstand zwischen den Cards */
+    margin-top: 1.5rem;
+}
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* width: 30%; */
+    text-align: center;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+.card:hover {
+    transform: scale(1.1);
+    /* color: whitesmoke;
+    background-color: #333; */
+}
+
+#gallery {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+#gallery h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    position: relative;
+    margin: 10px;
+    width: 30%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+
+footer {
+    /* position: fixed;
+    bottom: 0;
+    width: 100%; */
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+footer a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+/*  CSS für die agb.html Seite Seite-Start*/
+
+#agb h1, #agb h2 {
+    color: #333;
+    margin-left: 20px;
+}
+
+#agb p {
+    margin-left: 40px;
+    line-height: 1.6;
+}
+/*  CSS für die agb.html Seite Seite-Ende*/
+
+/*  CSS für die agb.html Seite Seite-Start*/
+
+#datenschutz h1, #datenschutz h2, #datenschutz h3 {
+    color: #333;
+    margin-left: 20px;
+}
+
+#datenschutz p {
+    margin-left: 40px;
+    line-height: 1.6;
+}
+/*  CSS für die agb.html Seite Seite-Ende*/
+
+#widerruf-page footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+#footerLi {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    
+}
+#footerLi a {
+    margin: 0 10px; /* Fügt links und rechts von jedem Link 10px Abstand hinzu */
+}
+#agb {
+    width: 80%;
+    max-width: 800px;
+    margin:auto;
+}
